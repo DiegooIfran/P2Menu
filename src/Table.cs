@@ -8,9 +8,9 @@ namespace Ucu.Poo.Restaurant
     public class Table
     {
         private List<Dish> order = new List<Dish>();
-        private int Number;
-        private bool IsOcuppied = false;
-        public Table(int number )
+        public int Number;
+        public bool IsOccupied = false;
+        public Table(int number)
         {
             this.Number = number;
         }   
@@ -26,14 +26,14 @@ namespace Ucu.Poo.Restaurant
         }
         
         
-        public void Occupy()
+        public void Ocupy()
         {
-            IsOcuppied = true;
+            IsOccupied = true;
         }
 
         public void Free()
         {
-            IsOcuppied = false;
+            IsOccupied = false;
             order.Clear();
         }
     }
