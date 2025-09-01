@@ -10,16 +10,16 @@ namespace Ucu.Poo.Restaurant
     {
         private List<Dish> dishes = new List<Dish>();
 
-        private void AddDish(Dish dish)
+        public void AddDish(Dish dish)
         {
             dishes.Add(dish);
         }
-        private void RemoveDish(Dish dish)
+        public void RemoveDish(Dish dish)
         {
             dishes.Remove(dish);
         }
 
-        private Dish GetDish(string nameDish)
+        public Dish GetDishByName(string nameDish)
         {
             foreach (Dish dish in this.dishes)
             {
