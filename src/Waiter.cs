@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Runtime.InteropServices.ObjectiveC;
 
 namespace Ucu.Poo.Restaurant
 {
@@ -9,6 +10,12 @@ namespace Ucu.Poo.Restaurant
     {
         private List<Table> assignedTables = new List<Table>();
         public string Name;
+        
+        public Waiter(string name, List<Table> mesas)
+        {
+            this.Name = name;
+            this.assignedTables = mesas;
+        }
         
         public void AssignTable(Table mesa)
         {
