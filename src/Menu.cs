@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+ 
 namespace Ucu.Poo.Restaurant
 {
     /// <summary>
@@ -23,7 +23,7 @@ namespace Ucu.Poo.Restaurant
         {
             foreach (Dish dish in this.dishes)
             {
-                if (nameDish == dish.name)
+                if (nameDish == dish.Name)
                 {
                     return dish;
                 }
