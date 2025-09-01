@@ -17,7 +17,7 @@ namespace Ucu.Poo.Restaurant
         
         public void TakeOrder(Table mesa, Dish plato)
         {
-            mesa.AddToOrder(plato)
+            mesa.AddToOrder(plato);
         }
     }
 }
